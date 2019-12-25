@@ -12,4 +12,4 @@ jobs:
     # using: "docker"
     # image: "Dockerfile"
     steps:
-      - run: docker build -t bernardkllogjri/bookstore .
+      - run: docker build -t bernardkllogjri/bookstore ../
