@@ -14,3 +14,6 @@ jobs:
       password: { { secrets.DOCKER_USER } }
       repository: { { secrets.DOCKER_REPO } }
       tag: { { $GITHUB_SHA } }
+    steps:
+      - name: Build
+      - run: docker build -t .
