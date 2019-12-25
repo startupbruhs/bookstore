@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"bookstore/repository"
+	"startupbruhs.github.io/bookstore/repository"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"

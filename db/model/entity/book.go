@@ -1,7 +1,7 @@
 package entity
 
 import (
-	"bookstore/db/model/hooks"
+	"startupbruhs.github.io/bookstore/db/model/hooks"
 	"encoding/json"
 	"time"
 

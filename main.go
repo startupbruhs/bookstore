@@ -1,8 +1,8 @@
 package main
 
 import (
-	"bookstore/db/model/entity"
-	"bookstore/server"
+	"startupbruhs.github.io/bookstore/db/model/entity"
+	"startupbruhs.github.io/bookstore/server"
 	"os"
 
 	"github.com/jinzhu/gorm"

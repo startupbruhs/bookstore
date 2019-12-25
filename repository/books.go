@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"bookstore/db/model/entity"
+	"startupbruhs.github.io/bookstore/db/model/entity"
 
 	"github.com/jinzhu/gorm"
 )

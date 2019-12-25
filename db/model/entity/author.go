@@ -1,8 +1,9 @@
 package entity
 
 import (
-	"bookstore/db/model/hooks"
 	"time"
+
+	"startupbruhs.github.io/bookstore/db/model/hooks"
 
 	"github.com/google/uuid"
 )

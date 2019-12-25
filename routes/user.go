@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"bookstore/repository"
+	"startupbruhs.github.io/bookstore/repository"
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
