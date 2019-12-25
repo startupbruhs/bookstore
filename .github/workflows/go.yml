@@ -3,22 +3,13 @@ name: CI
 on:
   push:
     branches:
-    - master
+      - master
 
 jobs:
-  deploy:
-    name: deploy to staging
-    runs-on: ubuntu-18.04
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-- name: Docker Action
+  name: Docker Action
   uses: zenato/docker-action@v1.0.0
   with:
-    username: {{ secrets.DOCKER_USER }}
-    password: {{ secrets.DOCKER_USER }}
-    repository: {{ secrets.DOCKER_REPO }}
-    tag: {{$GITHUB_SHA}}
+    username: { { secrets.DOCKER_USER } }
+    password: { { secrets.DOCKER_USER } }
+    repository: { { secrets.DOCKER_REPO } }
+    tag: { { $GITHUB_SHA } }
