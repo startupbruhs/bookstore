@@ -6,9 +6,10 @@ on:
       - master
 
 jobs:
-  runs-on: ubuntu-latest
-    name: Builds bookstore backend
-    using: 'docker'
-    image: 'Dockerfile'
-    steps:
-      - run: docker build -t bernardkllogjri/bookstore
+  build: 
+    runs-on: ubuntu-latest
+      name:  Builds bookstore backend
+      using: 'docker'
+      image: 'Dockerfile'
+      steps:
+        - run: docker build -t bernardkllogjri/bookstore
