@@ -12,4 +12,9 @@ jobs:
     # using: "docker"
     # image: "Dockerfile"
     steps:
-      - run: docker build -t bernardkllogjri/bookstore ../
+      - uses: actions/checkout@master
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: ${{ secrets.DOCKER_REPO }}
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
