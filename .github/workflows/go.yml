@@ -6,14 +6,9 @@ on:
       - master
 
 jobs:
-  deploy:
-    name: Docker Action
-    uses: zenato/docker-action@v1.0.0
-    with:
-      username: { { secrets.DOCKER_USER } }
-      password: { { secrets.DOCKER_USER } }
-      repository: { { secrets.DOCKER_REPO } }
-      tag: { { $GITHUB_SHA } }
+  runs-on: ubuntu-latest
+    name: Builds bookstore backend
+    using: 'docker'
+    image: 'Dockerfile'
     steps:
-      - name: Build
-        run: docker build -t .
+      - run: docker build -t bernardkllogjri/bookstore
