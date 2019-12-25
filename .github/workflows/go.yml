@@ -12,9 +12,10 @@ jobs:
     # using: "docker"
     # image: "Dockerfile"
     steps:
-      # - uses: actions/checkout@master
-      uses: elgohr/Publish-Docker-Github-Action@master
-      with:
-        name: ${{ secrets.DOCKER_REPO }}
-        username: ${{ secrets.DOCKER_USER }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+      - uses: actions/checkout@master
+      - name: Publish to Docker Repository
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: ${{ secrets.DOCKER_REPO }}
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
